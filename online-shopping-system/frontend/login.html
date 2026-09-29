@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | ShopEase</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="auth-page">
+  <header class="navbar">
+    <a class="brand" href="/">ShopEase</a>
+    <nav><a href="/products.html">Products</a></nav>
+  </header>
+
+  <main class="auth-wrap">
+    <section class="auth-card">
+      <p class="eyebrow">Customer account</p>
+      <h1>Welcome back</h1>
+      <p class="muted">Login with the email stored in the Customer table.</p>
+
+      <form id="login-form">
+        <label>Email
+          <input type="email" id="login-email" placeholder="ravi@example.com" required>
+        </label>
+        <button class="btn primary full" type="submit">Login</button>
+      </form>
+
+      <div id="login-message" class="message"></div>
+
+      <hr>
+
+      <p class="muted">New customer?</p>
+      <form id="register-form" class="register-form">
+        <label>Name
+          <input type="text" id="register-name" placeholder="Your name" required>
+        </label>
+        <label>Email
+          <input type="email" id="register-email" placeholder="you@example.com" required>
+        </label>
+        <label>Phone
+          <input type="text" id="register-phone" placeholder="9876543210">
+        </label>
+        <label>Address
+          <input type="text" id="register-address" placeholder="Your delivery address">
+        </label>
+        <button class="btn secondary full" type="submit">Create Account</button>
+      </form>
+      <div id="register-message" class="message"></div>
+    </section>
+  </main>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
