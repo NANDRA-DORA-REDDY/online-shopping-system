@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | ShopEase</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="/">ShopEase</a>
+    <nav>
+      <a href="/products.html">Products</a>
+      <a href="/cart.html">Cart</a>
+      <a href="/orders.html">Orders</a>
+    </nav>
+  </header>
+
+  <main class="page narrow">
+    <div class="page-title">
+      <div>
+        <p class="eyebrow">Order</p>
+        <h1>Checkout</h1>
+      </div>
+    </div>
+
+    <div id="checkout-message" class="message"></div>
+
+    <form id="checkout-form" class="checkout-card">
+      <label>Delivery Address
+        <textarea id="checkout-address" rows="4" placeholder="Enter your delivery address" required></textarea>
+      </label>
+
+      <label>Payment Method
+        <select id="payment-method">
+          <option value="COD">Cash on Delivery</option>
+          <option value="UPI">UPI</option>
+          <option value="Card">Card</option>
+          <option value="Net Banking">Net Banking</option>
+        </select>
+      </label>
+
+      <div id="checkout-summary" class="summary-box"></div>
+
+      <button class="btn primary full" type="submit">Place Order</button>
+    </form>
+  </main>
+
+  <script src="/js/script.js"></script>
+  <script src="/js/checkout.js"></script>
+</body>
+</html>
