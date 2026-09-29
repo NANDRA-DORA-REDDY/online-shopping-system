@@ -1,8 +1,0 @@
-1. Extract ZIP
-2. Upload files to GitHub
-3. Run database/schema.sql in MySQL Workbench
-4. Test: pip install -r requirements.txt
-5. Test: streamlit run app.py
-6. Create Railway MySQL service
-7. Add MYSQLHOST, MYSQLPORT, MYSQLUSER, MYSQLPASSWORD, MYSQLDATABASE
-8. Start command: streamlit run app.py --server.address=0.0.0.0 --server.port=$PORT
