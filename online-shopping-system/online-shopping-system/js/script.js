@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('form').forEach(form=>form.addEventListener('submit',event=>{event.preventDefault();alert('Demo complete — thank you.')}));document.querySelectorAll('[data-add-demo]').forEach(button=>button.addEventListener('click',()=>{button.textContent='ADDED TO BAG';button.disabled=true}));});
